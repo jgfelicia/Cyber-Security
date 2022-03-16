@@ -121,13 +121,15 @@ SSH into the control node and follow the steps below:
 - scroll to bottom and click on verify incoming data.
 
 _TODO: Answer the following questions to fill in the blanks:_
-- _Which file is the playbook? Where do you copy it?_
-filebeat-playbook.yml and metricbeat-playbook.yml are copied to /etc/ansible/roles
+  _Which file is the playbook? Where do you copy it?_
+  
+- filebeat-playbook.yml and metricbeat-playbook.yml are copied to /etc/ansible/roles
 
-- _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
-* filebeat configuration and metricbeat configuration file are updated on elk server.Since Filebeat is built to collect data about specific files on remote machines, it must be installed on the VMs you want to monitor
-- _Which URL do you navigate to in order to check that the ELK server is running?
-<http://20.70.27.157:5601/app/kibana#/dashboard/>
+ _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
+- filebeat configuration and metricbeat configuration file are updated on elk server.Since Filebeat is built to collect data about specific files on remote machines, it must be installed on the VMs you want to monitor
+  
+  _Which URL do you navigate to in order to check that the ELK server is running?
+- <http://20.70.27.157:5601/app/kibana#/dashboard/>
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
 curl https://gist.githubusercontent.com/slape/5cc350109583af6cbe577bbcc0710c93/raw/eca603b72586fbe148c11f9c87bf96a63cb25760/Filebeat >> /etc/ansible/roles/filebeat-playbook.yml
