@@ -88,7 +88,8 @@ The playbook implements the following tasks:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-![docker_output](/Nishil/Cyber-Security/Images/docker_ps_output.PNG)
+
+![DockerOutput](/Images/docker_ps_output.png)
 
 
 
